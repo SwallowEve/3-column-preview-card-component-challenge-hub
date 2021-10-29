@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root {
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+--Transparent-white: hsla(0, 0%, 100%, 0.75); /*(paragraphs)*/
+--Very-light-gray: hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+}
+
+body {
+    width: 100%;
+    max-width: 1440px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    margin: 0 auto;
+}
+.card {
+    width: 65%;
+    margin: 15vh auto;
+    display: grid;
+      
+}
+.card-item1, .card-item2, .card-item3 {
+    padding: 2rem;
+    }
+.card-item1 {
+    background-color: var(--Bright-orange);
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+}    
+.card-item2 {
+    background-color: var(--Dark-cyan);
+}
+.card-item3 {
+    background-color: var(--Very-dark-cyan);
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+.card-logo{
+width: 50px;
+height: auto;
+}
+.card-header {
+    color: var(--Very-light-gray);
+}
+.card-description{
+    color: var(--Transparent-white);
+}
+.card-header {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2rem;
+    margin: 2rem 0;
+   text-transform: capitalize;
+}
+.card-more {
+    display: block;
+    width: 120px;
+    height: 2.5rem;
+    background-color: var(--Very-light-gray);
+    border-radius: 40px;
+    margin-top: 4rem;
+}
+.card-item1 .card-more{
+    color: var(--Bright-orange);
+}
+.card-item2 .card-more{
+    color: var(--Dark-cyan);
+}
+.card-item3 .card-more{
+    color: var(--Very-dark-cyan);
+}
+.card-more:hover{
+    color: var(--Very-light-gray);
+    border: 2px solid var(--Very-light-gray);
+}
+.card-item1 .card-more:hover{
+    background-color: var(--Bright-orange);
+}
+.card-item2 .card-more:hover{
+    background-color: var(--Dark-cyan);
+}
+.card-item3 .card-more:hover{
+    background-color: var(--Very-dark-cyan);
+}
+@media (min-width: 376px) {
+    .card {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .card-item1 {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 2%;
+    }    
+    .card-item3 {
+        border-top-right-radius: 2%;
+        border-bottom-left-radius: 00;
+    
+    }
+  }
